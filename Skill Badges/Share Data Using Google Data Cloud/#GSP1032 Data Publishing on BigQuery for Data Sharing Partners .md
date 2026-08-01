@@ -1,5 +1,5 @@
-# Share Data Using Google Data Cloud
-## #GSP1032 Data Publishing on BigQuery for Data Sharing Partners 
+
+# #GSP1032 Data Publishing on BigQuery for Data Sharing Partners 
 
 ## Overview
 <p> A common scenario is where a Google Cloud Data Sharing Partner has proprietary datasets that customers can use for their analytics use cases. Customers need to subscribe to this data, query it within their own platform, then augment it with their own datasets and use their visualization tools for their customer facing dashboards. This enables Data Sharing Partners to simplify and accelerate how they build and deliver value from data-driven solutions.
@@ -97,9 +97,11 @@ Customer 2 username-
 
 ## Task 5. Authorize a dataset and grant permission to the users
 1. Open the demo_dataset and click + Share > Authorize Datasets.
+
 ![authorize datasets](/images/authorize%20datasets.png)
 
 2. Search and select the Dataset ID that needs to be authorized to share: Data Sharing Partner Project ID.demo_dataset.
+
 ![select dataset ID](/images/select%20dataset%20ID.png)
 
 3. Click Add Authorization.
@@ -124,7 +126,7 @@ In this section, you will verify the datasets and tables were shared for each cu
 2. From the Navigation Menu, go to BigQuery > Studio.
 
 3. Run the following query, which selects all columns from the demo_dataset.top_terms table from the Data Sharing Partner project:
-```
+```text
 SELECT * FROM `Project ID.demo_dataset.top_terms`
 ```
 You should now see the results populated.
@@ -153,7 +155,7 @@ You should now be able to see the dataset and table, as well as query it.
 2. From the Navigation Menu, go to BigQuery > Studio.
 
 3. Run the following query, which selects all columns from the demo_dataset.top_terms table from the Data Sharing Partner project:
-```
+```text
 SELECT * FROM `Project ID.demo_dataset.top_terms`
 ```
 You should now see the results populated.
